@@ -24,7 +24,7 @@ def c(text):
     text = text.replace("_", " ")
     return 'C {}'.format(text)
 
-
+@app.route('/python', defaults={'text': "is_cool"}, strict_slashes=False)
 @app.route('/python/<text>')
 def python(text):
     """capture variable python"""
