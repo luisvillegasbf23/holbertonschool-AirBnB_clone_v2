@@ -33,5 +33,12 @@ def python(text):
     return 'Python {}'.format(text)
 
 
+@app.route('/number/<int:n>')
+def number(text):
+    """only id number"""
+    return 'Python {}'.format(n)
+
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
