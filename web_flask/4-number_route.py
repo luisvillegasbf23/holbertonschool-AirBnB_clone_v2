@@ -34,10 +34,9 @@ def python(text):
 
 
 @app.route('/number/<int:n>')
-def number(text):
+def number(n):
     """only id number"""
-    return 'Python {}'.format(n)
-
+    return '{} is a number'.format(n)
 
 
 if __name__ == '__main__':
