@@ -11,11 +11,11 @@ def home():
     """ first end point """
     return 'Hello HBNB!'
 
+
 @app.route('/hbnb')
 def hbnb():
     """ second  end point """
-    return 'HBNB!'
-
+    return 'HBNB'
 
 
 if __name__ == '__main__':
